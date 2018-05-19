@@ -1,0 +1,231 @@
+<html>
+<head>
+<title> nav preview</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link href="http://www.linx-usa.com/css/nav2014.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+.thumb-dropdown .dropdown-menu > li {
+    position: relative;
+}
+.thumb-dropdown .dropdown-menu > li > a .thumbnail {
+    position: absolute; 
+    overflow: visible !important;
+    left: 100%;
+    top: -10px;
+    display: none;    
+    width: 350px;
+    height: auto;
+    margin-left: 5px;
+}
+.thumb-dropdown .dropdown-menu > li > a:hover .thumbnail  {
+    display: block;    
+}
+
+
+/*more*/
+.dropdown-submenu a,
+.dropdown-submenu .dropdown-menu > li > a {
+    text-decoration: none;
+}
+.dropdown-submenu {
+    position: relative;
+
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+</style>
+</head>
+<body>
+ <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+      <a class="navbar-brand" href="http://linx-usa.com/pages/home_include"><img src="https://media.linx-usa.com/files/images/LINX_Logo-01-sm.png"  alt="linx" /></a>
+  </div>
+  
+  
+  
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+        <li><a href="http://www.linx-usa.com/about" target="_blank">About</a></li>
+            <li><a href="http://www.linxclasses.com/" target="_blank">Classes</a></li>
+      <li class="dropdown mega-dropdown">
+        <a href="/" class="dropdown-toggle" data-toggle="dropdown" style="color:#9dc82a">Camps <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+        
+        <ul class="dropdown-menu mega-dropdown-menu row">
+          <li class="col-sm-3 hidden-xs hidden-sm">
+            <ul>
+            <li><a  href="/"  ><img src="https://media.linx-usa.com/files/camp/LINXCamps_Logo_Curved-.png" alt="linx camps"   /></a></li>
+             <li class="divider"></li>    
+             <li class="dropdown-header"><a href="/newcamps/2018">New Camps for 2018</a></li>
+             <li class="hidden-xs hidden-sm"><a href="/SpecialtyCamps/justiceleague&loc=nc">Justice League</a></li>
+             <li class="hidden-xs hidden-sm"><a href="/SpecialtyCamps/painting&loc=nc">Painting Picassos</a></li>
+             <li class="hidden-xs hidden-sm"><a href="/SpecialtyCamps/fashion&loc=nc">Project Fashion</a></li>  
+             <li class="hidden-xs hidden-sm"><a href="/SpecialtyCamps/comicbookadventures&loc=nc">Comic Book Adventures</a></li>  
+             <li class="hidden-xs hidden-sm"><a href="/SpecialtyCamps/SpartanAdventures&loc=nc">Spartan Adventures</a></li>  
+            </ul>
+                
+          </li>
+          
+          <li class="col-sm-2">
+            <ul>
+            <li class="dropdown-header"><a href="/catalog?loc=dd">Shop All Camps</a></li>
+            <li class="divider"></li>
+          <!--li class="dropdown-header"><a href="/2018PriorityRegistration">2018 Priority Registration</a></li>  -->
+             <li class=""><a href="/adventurecamps">Adventure</a></li>
+             <li class=""><a href="/generalcamps">General Camp</a></li>
+             <li class=""><a href="/JuniorCamps">Junior Camps</a></li>
+             <li class=""><a href="/LeadershipCamps">Leadership</a></li>
+             <li class=""><a href="/PerformingArtsCamps">Performing Arts</a></li>
+             <li class=""><a href="/sportscamps">LINX Sports</a></li>
+             <li class=""><a href="http://www.lxsportscamps.com/" target="_blank">LX Sports</a></li>
+            
+             <li class=""><a href="/steam">STEAM</a></li>
+            </ul>
+          </li>
+          <li class="col-sm-2">
+            <ul>
+             <!--services-->
+             <li class="dropdown-header"><a href="/Services">Services</a></li>
+             <li class="divider"></li>
+             <li class="hidden-xs hidden-sm"><a href="/Services/EarlyDropOff">Early Drop Off</a></li>
+             <li class="hidden-xs hidden-sm"><a href="/Services/ExtendedDay">Extended Day</a></li>
+             <li class="hidden-xs hidden-sm"><a href="/Services/Bus">Camp Bus</a></li>
+             <li class="hidden-xs hidden-sm"><a href="/Services/LINXLunchBox">Lunch Box</a></li>
+             <!--<li class="hidden-xs hidden-sm"><a href="/Details/Safe_Snacks" style="display:inline">& Snacks(Nut Free)</a></li>-->
+             <li class="hidden-xs hidden-sm"><a href="/Details/Swimming">Swimming</a></li>            
+             </ul>
+    
+          
+          </li>
+          <li class="col-sm-2">
+          <ul>
+          
+              <li class="dropdown-header"><a href="/About">About LINX Camps</a></li>
+                                <li class="divider"></li>
+              <li><a href="/Brochure/Online/Thankyou">2018 Camp Brochure</a></li>
+                            <li><a href="/Families">Camp Families & Forms</a></li>
+              <li><a href="http://linxcamps.com/social/myLINX_scrapbook" >Scrapbook</a></li>
+              <li><a href="/workinghere">Employment</a></li>
+              <li><a href="/About/Fans2">Fans & Accolades</a></li>                                                                        
+                            <li><a href="/faq">FAQs</a></li>
+                            <li> <a href="/Details/Locations">Campuses</a></li>
+                           <!--  <li><a href="/events/FamilyFunPicnic">Picnic</a></li>
+              <li> <a href="/events/cit_smores ">CIT Reunion</a></li>-->
+                            <li><a href="/Details/Pricing">Pricing</a></li>
+                            <li class="hidden-xs hidden-sm"><a href="/Details/Sessions">Weeks / Sessions</a></li>
+              <li><a href="/About/team">Team</a></li>
+              <li><a href="/tours">Tours</a></li>
+<li i class="hidden-xs hidden-sm"><a href="/PCO.html">Pre-camp Orientation</a></li> 
+          </ul>
+          </li>
+          <li class="col-sm-3">
+            <ul>
+              <li class="dropdown-header"><a href="/ByAge/">Camps by Age</a></li>
+              <li class="divider"></li>
+              <li class="hidden-xs hidden-sm"><a href="/ByAge/PeeWees">3-5 yrs</a></li>
+              <li class="hidden-xs hidden-sm"><a href=" /ByAge/Minors">K-1st</a></li>
+              <li class="hidden-xs hidden-sm"><a href=" /ByAge/Rookies">2nd-3rd</a></li>
+              <li class="hidden-xs hidden-sm"><a href="/ByAge/Masters">4th-5th</a></li>
+              <li class="hidden-xs hidden-sm"><a href="/ByAge/Legends">6th-8th</a></li>
+              <li class="hidden-xs hidden-sm"><a href="/ByAge/Elite">9th-10th</a></li>
+
+            </ul>
+          </li>
+        </ul>
+        
+      </li>
+      <li>
+         <a href="http://www.linx-usa.com//contact" target="_blank">Contact</a>
+            </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+                    <li><form class="navbar-form" role="search"  method="post" action="/sitesearch">
+                          <div class="input-group">
+                                <input type="text" class="form-control hidden-sm" placeholder="Search"  name="searchTerms" id="searchTerms">
+                          <div class="input-group-btn">
+                                <button class="btn btn-default"  name="searchFormSubmit" id="searchFormSubmit"><i class="glyphicon glyphicon-search"></i></button>
+                         </div>
+                        </div>
+                      </form>
+                       </li>
+                  <li><a href="tel:781-235-3210">781-235-3210 </a></li>
+
+<li><!-- linx:cart-information --></li>
+                <li class="dropdown"><!-- linx:login-logout-container --></li>
+
+                </ul>
+</div>
+  </div><!-- /.nav-collapse -->
+</nav>
+
+
+<!--end nav-->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="/dist/scripts.min.js"></script>
+<script>
+
+$( "li.dropdown" ).on({
+click: function() {
+}, mouseenter: function() {
+$( this ).addClass( "open" );
+$(this).find("a").removeAttr('data-toggle');
+}, mouseleave: function() {
+$( this ).removeClass( "open" );
+
+}
+});
+</script>
+</body>
+</html>
